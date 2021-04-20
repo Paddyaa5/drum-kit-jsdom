@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-family: "Plaster", cursive;
+    font-size: calc(18px + 4vw);
+    background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+    background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    position: relative;
+    z-index: 1;
+    font-size: calc(10px + 1.6vw);
+}
+h6 {
+    position: relative;
+    z-index: 1;
+    font-size: calc(9px + 0.5vw);
+}
+
+button {
+    outline: none;
+    padding: 10px 20px;
+}
+.full-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+}
+.header-section {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme-mode {
+    position: absolute;
+    font-size: calc(40px + 1vw);
+    cursor: pointer;
+    left: 5vw;
+}
+.keycode-info-section {
+    height: 75vh;
+    width: 100%;
+    padding: 5vh 10vw;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.keycode-box {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: all 0.2s;
+}
+.inner-circle {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+.boom-active {
+    background-color: #b0f2b4;
+    height: 200px;
+    width: 200px;
+}
+.clap-active {
+    background-color: #baf2e9;
+    height: 200px;
+    width: 200px;
+}
+.hihat-active {
+    background-color: #bad7f2;
+    height: 200px;
+    width: 200px;
+}
+.kick-active {
+    background-color: #f2bac9;
+    height: 200px;
+    width: 200px;
+}
+.openhat-active {
+    background-color: #dbb043;
+    height: 200px;
+    width: 200px;
+}
+.ride-active {
+    background-color: #db5461;
+    height: 200px;
+    width: 200px;
+}
+.snare-active {
+    background-color: #fe7648;
+    height: 200px;
+    width: 200px;
+}
+.tink-active {
+    background-color: #cf8ba9;
+    height: 200px;
+    width: 200px;
+}
+.tom-active {
+    background-color: #704c5e;
+    height: 200px;
+    width: 200px;
+}
+@media screen and (max-width: 500px) {
+    .keycode-info-section {
+        padding: 5vh 5vw;
+    }
+    .keycode-box {
+        padding: 10px;
+        width: 80px;
+        height: 80px;
+    }
+}
